@@ -27,10 +27,8 @@ app.use(bodyParser.urlencoded({
 app.use(express.static('public'));
 
 // Database configuration with mongoose
-// UNCOMMENT WHEN LOCAL:
-// mongoose.connect('mongodb://localhost/newscommentdb');
-// UNCOMMENT WHEN HEROKU:
-mongoose.connect('');
+// UNCOMMENT WHEN HEROKU:ENTER MONGOOSE CONNECTION URI FROM TERMINAL
+mongoose.connect('mongodb://heroku_bgl64psv:ou5kf61v2vlq2v8lcva579c7fb@ds031832.mlab.com:31832/heroku_bgl64psv');
 
 var db = mongoose.connection;
 
